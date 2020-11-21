@@ -28,19 +28,24 @@ Our project aims to show how the supply chain stages will be improved with smart
 ### Supply Chain Stages:
 
 (1) Manufacturer - Land freight at origin
+
 *Manufacturer receives shipping contract and moves goods to freight.*
 
 (2) Cargo by Ship
-*Freight shipping to shipping port.*
+
+*Freight received at shipping port and is scheduled to be delivered to warehouse holding.*
 
 (3) Warehouse Holding
-*Container received and stored in warehouse at shipping port.*
+
+*Container stored at warehouse shipping port.*
 
 (4) Land freight at destination 
-*Goods collected by transportation company and in transit.*
+
+*Goods collected by transportation company and in transit to customer.*
 
 (5) Customer receives freight
-*Transportation company delivers goods to customer.*
+
+*Customer receives delivery in the agreed upon time.*
 
 The project presentation can be found at the following link. 
 
