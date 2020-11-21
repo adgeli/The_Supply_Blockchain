@@ -4,6 +4,17 @@
 
 ---
 
+## Table of Contents
+
+- [Project Objective](#Project-Objectives)
+- [Key Barriers impacting Traditional Supply Chain Model](#Key-Barriers-impacting-Traditional-Supply-Chain-Model)
+- [Solution: Cue Smart Contracts & Blockchain](#Solution:-Cue-Smart-Contracts-&-Blockchain)
+- [Project Code](#Project-Code)
+- [Installation Requirements](#Installation-Requirements)
+- [File Contents](#File-Contents)
+- [Resources and Troubleshooting](#Resources-and-Troubleshooting) 
+
+---
 ## Project Objective
 
 This project explores the use case of smart contracts and blockchain technology to remove the barriers within a supply chain.
@@ -78,6 +89,10 @@ To successfully run the code, the following installations are required:
 
 [MetaMask](https://metamask.io/)
 
+---
+
+## File Contents 
+---
 
 ## Resources and Troubleshooting 
 ---
@@ -87,9 +102,3 @@ We experienced issues with completing transactions with ethereum within our smar
 Please use the following troubleshooting guide below:
 
 [Ethereum Function within Smart Contract](https://ethereum.stackexchange.com/questions/46107/how-do-you-send-ether-as-a-function-to-a-contract-using-remix)
-
-
----
-
-## File Contents 
----
