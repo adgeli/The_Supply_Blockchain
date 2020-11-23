@@ -1,11 +1,11 @@
 # Kovan Supply Chain Smart Contract Test Cases
 
-This document contains the test cases used to verfiy the excution and functionality of the Supply Chain Smart Contact.  The contract has set up to employ the interfaces, contracts, and utilities related to the [ERC721 Non-Fungible Token Standard](https://eips.ethereum.org/EIPS/eip-721).
+This document contains the test cases used to verify the execution and functionality of the Supply Chain Smart Contact.  The contract has set up to employ the interfaces, contracts, and utilities related to the [ERC721 Non-Fungible Token Standard](https://eips.ethereum.org/EIPS/eip-721).
 
 ---
 
 ## Table of Contents
-- `Supply Chain Deployment Requirments`
+- `Supply Chain Deployment Requirements`
 - `Contract Setup`
 - `Stage 1 Test`
 - `Stage 2 Test`
@@ -63,7 +63,7 @@ A test contract was setup using the following addresses, stage amounts and URI's
 
 ![Contact Setup](screenshots/test_transaction_setup.JPG)       
 
-When the contract is created, a transaction will be executed against the owners account, reducing the owners account by the amount of the contract 6 Ethereum .  
+When the contract is created, a transaction will be executed against the owners account, reducing the owners account by the amount of the contract 6 Ethereum.  
 
 Owners Opening Balance     
 ![Owner Open Balance](screenshots/test_owner_open_bal.JPG)              
@@ -81,7 +81,7 @@ Kovan Network Transaction
 
 ## `Stage 1 Test`
 
-First test case is to simulate the completion of stage 1 and payment to the owmer of stage 1.  Expected resutls is to have the contract advance to the next stage, payment of 1 Ethereum to stage 1 owners account and the contact balance to decrease by the stage 1 amount.
+First test case is to simulate the completion of stage 1 and payment to the owner of stage 1.  Expected results is to have the contract advance to the next stage, payment of 1 Ethereum to stage 1 owners account and the contact balance to decrease by the stage 1 amount.
 
 Stage 1 Owners Opening Balance     
 ![Stage1 Open Balance](screenshots/test_stg1_open_bal.JPG) 
@@ -102,7 +102,7 @@ Kovan Network Transaction
 
 ## `Stage 2 Test`
 
-Next test case is to execute a transaction for stage 2 with expected resutls to have the contract advance to the next stage, payment of 2 Ethereum to stage 2 owners account and the contact balance to decrease by the stage 2 amount.
+Next test case is to execute a transaction for stage 2 with expected results to have the contract advance to the next stage, payment of 2 Ethereum to stage 2 owners account and the contact balance to decrease by the stage 2 amount.
 
 Stage 2 Owners Opening Balance     
 ![Stage2 Open Balance](screenshots/test_stg2_open_bal.JPG) 
@@ -123,7 +123,7 @@ Kovan Network Transaction
 
 ## `Stage 3 Test`
 
-Same as the test for stage 2 expected resutls for stage 3 is to advance to the next stage, payment of 1 Ethereum to stage 3 owners account and the contact balance to decrease by the stage 3 amount.
+Same as the test for stage 2 expected results for stage 3 is to advance to the next stage, payment of 1 Ethereum to stage 3 owners account and the contact balance to decrease by the stage 3 amount.
 
 Stage 3 Owners Opening Balance     
 ![Stage3 Open Balance](screenshots/test_stg3_open_bal.JPG) 
@@ -142,7 +142,7 @@ Kovan Network Transaction
 
 ## `Stage 4 Test`
 
-As with the above cases, execpected results for stage 4 is have the contract advance to the next stage, payment of 1 Ethereum to stage 4 owners account and the contact balance to decrease by the stage 4 amount.
+As with the above cases, excepted results for stage 4 is have the contract advance to the next stage, payment of 1 Ethereum to stage 4 owners account and the contact balance to decrease by the stage 4 amount.
 
 Stage 4 Owners Opening Balance     
 ![Stage4 Open Balance](screenshots/test_stg4_open_bal.JPG) 
@@ -161,7 +161,7 @@ Kovan Network Transaction
 
 ## `Stage 5 Test`
 
-In the final transaction of the contract, again we expecting payment of 1 Ethereum to stage 5 owners account and the contact balance to decrease by the stage 5 amount with the contract balance set to zero.  Setting the contract balance to zero with signal the closure of the contract.  Also the stage will be set to zero along with the stage balance. 
+In the final transaction of the contract, again we expecting payment of 1 Ethereum to stage 5 owners account and the contact balance to decrease by the stage 5 amount with the contract balance set to zero.  Setting the contract balance to zero with signal the closure of the contract.  Also, the stage will be set to zero along with the stage balance. 
 
 Stage 5 Owners Opening Balance     
 ![Stage5 Open Balance](screenshots/test_stg5_open_bal.JPG) 
