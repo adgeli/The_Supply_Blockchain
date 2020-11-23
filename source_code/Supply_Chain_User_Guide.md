@@ -1,7 +1,7 @@
 
-# Sending a Transaction via the Multi-Blockchain Wallet
+# Setting Up the Supply Chain Smart Contract
 
-This guide provides instruction on how to set up a `Supply Chain` Block chain that will create any number of shipping contracts that will report on the current shipping status of the contract and log shipment or stage payments.  The contract has set up to employ the interfaces, contracts, and utilities related to the [ERC721 Non-Fungible Token Standard](https://eips.ethereum.org/EIPS/eip-721).
+This guide provides instruction on how to set up a `Supply Chain` Block chain that will create any number of shipping contracts.  In the contracts you will be able to  report on the current shipping status of the contract and log shipment or stage payments.  The contract has set up to employ the interfaces, contracts, and utilities related to the [ERC721 Non-Fungible Token Standard](https://eips.ethereum.org/EIPS/eip-721).
 
 ---
 
@@ -12,6 +12,7 @@ This guide provides instruction on how to set up a `Supply Chain` Block chain th
 - `Log Shipment`
 - `Command Line Interface`
 - `Other Options`
+- `Kovan Test Cases`
 
 ---
 
@@ -57,11 +58,6 @@ In order to run the command line interface, the following imports will be need t
     - `PINATA_SECRET_API_KEY` - set the private account key provided by Pinata
     - `WEB3_PROVIDER_URI` - web address hosting the contract.  Set to local host for testing.
     - `SUPPLYCHAIN_ADDRESS` - address of the deployed contract
-
-The contract was built, deployed and tested first on a local Ganache blockchain by connecting to Injected Web3 on Remix, conducted through MetaMask under localhost:8545. After tests were completed locally, the contracts were then successfully deployed and tested on the Kovan network 
-
-
-at the following address: 0xF1F47c0f63B98675bd2441589237E4fBD6050eEe
 
 ---
 
@@ -116,6 +112,8 @@ A screen report will display indicating what stage the contract is in, amount du
 
 ![Report Shipment](screenshots/command_line_report.JPG)
 
+---
+
 ## `Other Options`
 
 Other functions are available in the block that can provide additional information such as contact name, symbol and owner by selecting the following buttons.
@@ -131,6 +129,12 @@ Finally; at any given time, a contact balance and the number of contacts in the 
 
 ![Balance](screenshots/balance.JPG)     
 ![Contacts](screenshots/contracts.JPG)
+
+---
+
+## `Kovan Test Cases`
+
+The contract was built, deployed and tested first on a local Ganache blockchain by connecting to Injected Web3 on Remix, conducted through MetaMask under localhost:8545. After tests were completed locally, the contracts were then successfully deployed and tested on the Kovan network. Test results can be found in the [`Kovan Test Case`](Kovan_Test_Case.md)
 
 
 
