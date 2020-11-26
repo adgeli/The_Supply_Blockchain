@@ -107,6 +107,10 @@ Automation, validation, and decentralization on a public blockchain derives a ne
 
 Details on the project code and user deployment can be found [here](source_code/Supply_Chain_User_Guide.md)
 
+![videodemo](images/videodemo.gif)
+
+User's can watch a live proejct demo video [here](Supply Blockchain.mp4)
+
 ---
 
 ## Installation Requirements
