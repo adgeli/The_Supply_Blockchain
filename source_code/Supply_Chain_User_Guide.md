@@ -152,7 +152,7 @@ Finally; at any given time, a contact balance and the number of contacts in the 
 
 ## `Kovan Test Cases`
 
-The contract was built, deployed and tested first on a local Ganache blockchain by connecting to Injected Web3 on Remix, conducted through MetaMask under localhost:8545. After tests were completed locally, the contracts were then successfully deployed and tested on the Kovan network. Test results can be found in the [`Kovan Test Case`](Kovan_Test_Case.md)
+The contract was built, deployed and tested first on a local Ganache blockchain by connecting to Injected Web3 on Remix, conducted through MetaMask under localhost:8545. After tests were completed locally, the contracts were then successfully deployed and tested on the Kovan network. Test results can be found in the [`Kovan Test Case`](Kovan_Test_Cases.md)
 
 
 
