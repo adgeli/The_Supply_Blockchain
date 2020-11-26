@@ -109,7 +109,7 @@ Details on the project code and user deployment can be found [here](source_code/
 
 ![videodemo](images/videodemo.gif)
 
-User's can watch a live proejct demo video [here](Supply Blockchain.mp4)
+User's can watch a live proejct demo video by navigating to the mp4 titled ```Supply Blockchain```
 
 ---
 
