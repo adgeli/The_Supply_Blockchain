@@ -4,6 +4,8 @@
 
 *Project Team: Alexandra Dumitras-Geli, Carlos Ituarte, Ian Davies, and Musonda Yamfwa.*
 
+**Project Presentation** can be found [here](https://docs.google.com/presentation/d/1ECOEC7irGC1phI2IZMtvSuyvmwWap4Wv92qfQ_tB6CI/edit?usp=sharing)
+
 ---
 
 ## Table of Contents
@@ -52,8 +54,6 @@ Our project aims to show how the supply chain stages will be improved with smart
 5. Customer receives freight
 
 *Customer receives delivery in the agreed upon time.*
-
-The project presentation can be found at the following link. 
 
 ---
 
