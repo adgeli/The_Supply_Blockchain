@@ -20,6 +20,8 @@ contract SupplyChain is ERC721Full {
 // Contact Balance     
     uint public contractBalance; 
     
+    uint public sum_contact;
+    
 // Contract struct with each shipping stage and payment for each stage
 // Stage and stage amount used to track which stage the contract is currently in and the stage amount
     struct Shipment {
@@ -64,6 +66,12 @@ contract SupplyChain is ERC721Full {
             uint amt_stage_5,
             string memory token_uri) public payable returns(uint) {
 
+// Sum all of the stages payouts and convert to Eth.  To be used later to confirm contract total = sum of the stages.
+        sum_contact = amt_stage_1.add(amt_stage_2.add(amt_stage_3.add(amt_stage_4.add(amt_stage_5))));
+        sum_contact = sum_contact.mul(rate);
+       
+
+
 // Advance the token number                
         token_ids.increment();
         uint token_id = token_ids.current();
@@ -89,6 +97,9 @@ contract SupplyChain is ERC721Full {
  
  // Call deposit function to set the current value of the contract       
         deposit();
+
+// Verify contract total = sum of the stage payouts.
+        require(contractBalance == sum_contact, "Contact total does not equal the sum of the shipment distribution!");
         
         return token_id;
     }

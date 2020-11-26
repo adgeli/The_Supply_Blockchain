@@ -23,8 +23,8 @@ current_time = datetime.now().strftime("%H:%M")
 #  Owner: Stage owner address.  Address MUST be stage owner                 #
 #  Token ID: Contract id / token number                                     #
 #  URI:  address to shipping documents                                      #
-#                                                                          #
-#  Returns:                                                                  #
+#                                                                           #
+#  Returns:                                                                 #
 #  Owner: Stage owner address.  Address MUST be stage owner                 #
 #  Token ID: Contract id / token number                                     #
 #  URI:  address to shipping documents                                      #

@@ -1,57 +1,5 @@
 [
 	{
-		"constant": true,
-		"inputs": [
-			{
-				"name": "interfaceId",
-				"type": "bytes4"
-			}
-		],
-		"name": "supportsInterface",
-		"outputs": [
-			{
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [],
-		"name": "name",
-		"outputs": [
-			{
-				"name": "",
-				"type": "string"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [
-			{
-				"name": "tokenId",
-				"type": "uint256"
-			}
-		],
-		"name": "getApproved",
-		"outputs": [
-			{
-				"name": "",
-				"type": "address"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
 		"constant": false,
 		"inputs": [
 			{
@@ -70,216 +18,75 @@
 		"type": "function"
 	},
 	{
-		"constant": true,
+		"constant": false,
 		"inputs": [],
-		"name": "totalSupply",
-		"outputs": [
-			{
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
+		"name": "deposit",
+		"outputs": [],
+		"payable": true,
+		"stateMutability": "payable",
 		"type": "function"
 	},
 	{
 		"constant": false,
 		"inputs": [
 			{
-				"name": "from",
+				"name": "owner",
 				"type": "address"
-			},
-			{
-				"name": "to",
-				"type": "address"
-			},
-			{
-				"name": "tokenId",
-				"type": "uint256"
-			}
-		],
-		"name": "transferFrom",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [
-			{
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"name": "shipments",
-		"outputs": [
-			{
-				"name": "stage",
-				"type": "uint256"
-			},
-			{
-				"name": "stage_amount",
-				"type": "uint256"
-			},
-			{
-				"name": "contract_balance",
-				"type": "uint256"
 			},
 			{
 				"name": "owner_stage_1",
 				"type": "address"
 			},
 			{
+				"name": "amt_stage_1",
+				"type": "uint256"
+			},
+			{
 				"name": "owner_stage_2",
 				"type": "address"
+			},
+			{
+				"name": "amt_stage_2",
+				"type": "uint256"
 			},
 			{
 				"name": "owner_stage_3",
 				"type": "address"
 			},
 			{
+				"name": "amt_stage_3",
+				"type": "uint256"
+			},
+			{
 				"name": "owner_stage_4",
 				"type": "address"
 			},
 			{
+				"name": "amt_stage_4",
+				"type": "uint256"
+			},
+			{
 				"name": "owner_stage_5",
 				"type": "address"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [
-			{
-				"name": "owner",
-				"type": "address"
 			},
 			{
-				"name": "index",
+				"name": "amt_stage_5",
 				"type": "uint256"
-			}
-		],
-		"name": "tokenOfOwnerByIndex",
-		"outputs": [
-			{
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [
-			{
-				"name": "from",
-				"type": "address"
 			},
 			{
-				"name": "to",
-				"type": "address"
-			},
-			{
-				"name": "tokenId",
-				"type": "uint256"
-			}
-		],
-		"name": "safeTransferFrom",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [
-			{
-				"name": "index",
-				"type": "uint256"
-			}
-		],
-		"name": "tokenByIndex",
-		"outputs": [
-			{
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [
-			{
-				"name": "tokenId",
-				"type": "uint256"
-			}
-		],
-		"name": "ownerOf",
-		"outputs": [
-			{
-				"name": "",
-				"type": "address"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [],
-		"name": "baseURI",
-		"outputs": [
-			{
-				"name": "",
+				"name": "token_uri",
 				"type": "string"
 			}
 		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [],
-		"name": "amt_stage_2",
+		"name": "registerShipment",
 		"outputs": [
 			{
 				"name": "",
 				"type": "uint256"
 			}
 		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [
-			{
-				"name": "owner",
-				"type": "address"
-			}
-		],
-		"name": "balanceOf",
-		"outputs": [
-			{
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
+		"payable": true,
+		"stateMutability": "payable",
 		"type": "function"
 	},
 	{
@@ -310,31 +117,51 @@
 		"type": "function"
 	},
 	{
-		"constant": true,
-		"inputs": [],
-		"name": "contractBalance",
-		"outputs": [
+		"constant": false,
+		"inputs": [
 			{
-				"name": "",
+				"name": "from",
+				"type": "address"
+			},
+			{
+				"name": "to",
+				"type": "address"
+			},
+			{
+				"name": "tokenId",
 				"type": "uint256"
 			}
 		],
+		"name": "safeTransferFrom",
+		"outputs": [],
 		"payable": false,
-		"stateMutability": "view",
+		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
-		"constant": true,
-		"inputs": [],
-		"name": "symbol",
-		"outputs": [
+		"constant": false,
+		"inputs": [
 			{
-				"name": "",
-				"type": "string"
+				"name": "from",
+				"type": "address"
+			},
+			{
+				"name": "to",
+				"type": "address"
+			},
+			{
+				"name": "tokenId",
+				"type": "uint256"
+			},
+			{
+				"name": "_data",
+				"type": "bytes"
 			}
 		],
+		"name": "safeTransferFrom",
+		"outputs": [],
 		"payable": false,
-		"stateMutability": "view",
+		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
@@ -369,166 +196,12 @@
 			{
 				"name": "tokenId",
 				"type": "uint256"
-			},
-			{
-				"name": "_data",
-				"type": "bytes"
 			}
 		],
-		"name": "safeTransferFrom",
+		"name": "transferFrom",
 		"outputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [],
-		"name": "amt_stage_4",
-		"outputs": [
-			{
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [
-			{
-				"name": "tokenId",
-				"type": "uint256"
-			}
-		],
-		"name": "tokenURI",
-		"outputs": [
-			{
-				"name": "",
-				"type": "string"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [],
-		"name": "amt_stage_1",
-		"outputs": [
-			{
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [],
-		"name": "deposit",
-		"outputs": [],
-		"payable": true,
-		"stateMutability": "payable",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [],
-		"name": "amt_stage_5",
-		"outputs": [
-			{
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [
-			{
-				"name": "owner",
-				"type": "address"
-			},
-			{
-				"name": "operator",
-				"type": "address"
-			}
-		],
-		"name": "isApprovedForAll",
-		"outputs": [
-			{
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [
-			{
-				"name": "owner",
-				"type": "address"
-			},
-			{
-				"name": "owner_stage_1",
-				"type": "address"
-			},
-			{
-				"name": "owner_stage_2",
-				"type": "address"
-			},
-			{
-				"name": "owner_stage_3",
-				"type": "address"
-			},
-			{
-				"name": "owner_stage_4",
-				"type": "address"
-			},
-			{
-				"name": "owner_stage_5",
-				"type": "address"
-			},
-			{
-				"name": "token_uri",
-				"type": "string"
-			}
-		],
-		"name": "registerShipment",
-		"outputs": [
-			{
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"payable": true,
-		"stateMutability": "payable",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [],
-		"name": "amt_stage_3",
-		"outputs": [
-			{
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
 		"type": "function"
 	},
 	{
@@ -624,5 +297,316 @@
 		],
 		"name": "ApprovalForAll",
 		"type": "event"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "owner",
+				"type": "address"
+			}
+		],
+		"name": "balanceOf",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "baseURI",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "contractBalance",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "tokenId",
+				"type": "uint256"
+			}
+		],
+		"name": "getApproved",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "owner",
+				"type": "address"
+			},
+			{
+				"name": "operator",
+				"type": "address"
+			}
+		],
+		"name": "isApprovedForAll",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "name",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "tokenId",
+				"type": "uint256"
+			}
+		],
+		"name": "ownerOf",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "shipments",
+		"outputs": [
+			{
+				"name": "stage",
+				"type": "uint256"
+			},
+			{
+				"name": "stage_amount",
+				"type": "uint256"
+			},
+			{
+				"name": "contract_balance",
+				"type": "uint256"
+			},
+			{
+				"name": "owner_stage_1",
+				"type": "address"
+			},
+			{
+				"name": "amt_stage_1",
+				"type": "uint256"
+			},
+			{
+				"name": "owner_stage_2",
+				"type": "address"
+			},
+			{
+				"name": "amt_stage_2",
+				"type": "uint256"
+			},
+			{
+				"name": "owner_stage_3",
+				"type": "address"
+			},
+			{
+				"name": "amt_stage_3",
+				"type": "uint256"
+			},
+			{
+				"name": "owner_stage_4",
+				"type": "address"
+			},
+			{
+				"name": "amt_stage_4",
+				"type": "uint256"
+			},
+			{
+				"name": "owner_stage_5",
+				"type": "address"
+			},
+			{
+				"name": "amt_stage_5",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "sum_contact",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "interfaceId",
+				"type": "bytes4"
+			}
+		],
+		"name": "supportsInterface",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "symbol",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "index",
+				"type": "uint256"
+			}
+		],
+		"name": "tokenByIndex",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "owner",
+				"type": "address"
+			},
+			{
+				"name": "index",
+				"type": "uint256"
+			}
+		],
+		"name": "tokenOfOwnerByIndex",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "tokenId",
+				"type": "uint256"
+			}
+		],
+		"name": "tokenURI",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "totalSupply",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
 	}
 ]

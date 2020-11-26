@@ -8,6 +8,7 @@ This guide provides instruction on how to set up a `Supply Chain` Block chain th
 ## Table of Contents
 - `Dependencies and Required Tools`
 - `Contract Files and Setup`
+- `Contract Criteria`
 - `Create Supply Chain Contract`
 - `Log Shipment`
 - `Command Line Interface`
@@ -61,9 +62,29 @@ In order to run the command line interface, the following imports will be need t
 
 ---
 
+## `Contract Criteria`
+
+Before the contract can be setup, there are requirements and criteria that must be adhered to.  If these are not meet the contract cannot be created or shipping stage payments made.  Errors will display if the criteria are not meet.
+
+1. During the contract setup, the amount paid into the contract must equal the total amount paid to each stage.  Following error will display if not set up correctly.
+
+![Contract Total Err](screenshots/err_total.JPG)
+
+2. Only a stage owner can log a stage completion and payment.  If someone other then the owner attempts to log a shipment or payment the following error will occur.    
+
+![Contract Total Err](screenshots/err_owner.JPG)
+
+2. Supporting documentation URI must be provided.  Documentation is proof of stage completion
+3. Once the contract balance hits zero and stages completed, the contract is fulfilled.  No further payments can be logged.  If an attempt is made to log a stage completion when the contract is complete, the following error will display
+
+![Contract Total Err](screenshots/err_complete.JPG)
+
+
+---
+
 ## `Create Supply Chain Contract`
 
-Once the Supply Chain has been deployed, a shipping contract will need to be setup. This is accomplished via the `reportShipment` function of the contract.  Ethereum is accepted into the contract representing the total amount of all stages of the shipping process. The amount of each stage should not exceed the total amount of Ethereum entered.  Setup begins with adding the contract's owner wallet address, then enter the stage owner’s wallet addresses for each stage of the shipping process with the amount to be paid for the stage.  Once all 5 stage owner's wallet addresses and amounts are entered, the supporting contract document URI is then added.
+Once the Supply Chain has been deployed, a shipping contract will need to be setup. This is accomplished via the `reportShipment` function of the contract.  Ethereum is accepted into the contract representing the total amount of all stages of the shipping process. The amount of each stage should not exceed the total amount of Ethereum entered.  Setup begins with adding the contract's owner wallet address, then enter the stage owner’s wallet addresses for each stage of the shipping process with the amount to be paid for the stage.  Once all 5 stage owner's wallet addresses and amounts are entered, the supporting contract document URI is then added.  Note the total amount paid into the contract must equal all the stage amounts.  See item 1 in the criteria section.
 
 ![Contact Setup](screenshots/contact_setup.JPG)
 
@@ -71,21 +92,18 @@ Once the Supply Chain has been deployed, a shipping contract will need to be set
 
 ## `Log Shipment`
 
-With the shipping contract now setup, each stage owner may begin updating and logging payment for completion of their stage of the shipping process.  To log a stage completion and payment, there are set requirements.
+With the contract now setup, stage completion can now be updated and payment logged for completion of each stage of the shipping process.  
 
-1. Only a stage owner can log a stage completion and payment
-2. Supporting documentation URI must be provided
-3. Once the contract balance hits zero, shipping process is complete.  No further payments can be logged.
-
-As each stage is completed, the amount set for the stage is paid to the stage owner out of the contract total.  The contract total is decreased by the stage amount and will eventually hit a balance of zero when the final stage is reached.  Logging a stage completion and payment is executed via the `reportShipment` function.  Stage owners enters their wallet address, contract id / token id and supporting document URI.  When sumbitted the amount set for the stage is paid to the stage owner.
+As each stage is completed, the amount set for the stage is paid to the stage owner out of the contract total.  The contract total is decreased by the stage amount and will eventually hit a balance of zero when the final stage is reached.  Logging a stage completion and payment is executed via the `reportShipment` function.  The stage owners wallet address , contract id / token id and supporting document URI is entered.  When sumbitted the amount set for the stage is paid to the stage owner.
 
 ![Log Shipment](screenshots/log_shipment.JPG)
+
 
 ---
 
 ## `Command Line Interface`
 
-Included with the Supply Chain contract is a command line interface.  This allows stage owners to log shipments or payments and generate status reports on the shipping contract.  To use the interface, download the contact files from `GitHub`.  Open a command window and navigate to the folder location where the files were copied.  
+Included with the Supply Chain contract is a command line interface.  This allows stage owners to log shipments or payments and generate status reports on the shipping contract.  To use the interface, download the contract files from `GitHub`.  Open a command window and navigate to the folder location where the files were copied.  
 
 From the interface there are two command that can be performed.  The first is logging a shipment which calls the `reportShipment` function of the contract.  The second is a report option that displays the current status of the contract.
 
