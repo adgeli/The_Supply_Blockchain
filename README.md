@@ -10,7 +10,7 @@
 
 - [Project Objective](#Project-Objective)
 - [Key Barriers impacting Traditional Supply Chain Model](#Key-Barriers-impacting-Traditional-Supply-Chain-Model)
-- [Solution: Cue Smart Contracts & Blockchain](#Solution:-Cue-Smart-Contracts-&-Blockchain)
+- [Solution: Cue Smart Contracts & Blockchain](#Solution-Cue-Smart-Contracts-and-Blockchain)
 - [Project Code](#Project-Code)
 - [Installation Requirements](#Installation-Requirements)
 - [File Contents](#File-Contents)
@@ -79,7 +79,7 @@ The supply chain network is broken between third party companies, manufacturers,
 
 ---
 
-## Solution: Cue Smart Contracts & Blockchain
+## Solution Cue Smart Contracts and Blockchain
 
 ![solutions](images/solution.png)
 
