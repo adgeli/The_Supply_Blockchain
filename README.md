@@ -103,7 +103,7 @@ Automation, validation, and decentralization on a public blockchain derives a ne
 
 ## Project Code
 
-<img src="images/codedemolive.gif" width="425"/> <img src="images/livecode.gif" width="425"/> 
+<img src="images/codedemolive.gif" width="390"/> <img src="images/livecode.gif" width="390"/> 
 
 Details on the project code and user deployment can be found [here](source_code/Supply_Chain_User_Guide.md)
 
