@@ -42,3 +42,5 @@ def pinJSONtoIPFS(json):
     )
     ipfs_hash = r.json()["IpfsHash"]
     return f"ipfs://{ipfs_hash}"
+
+
