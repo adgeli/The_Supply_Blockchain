@@ -29,6 +29,7 @@ current_time = datetime.now().strftime("%H:%M")
 #  Token ID: Contract id / token number                                     #
 #  URI:  address to shipping documents                                      #
 #############################################################################
+
 def createShippingReport():
     print("Record Shipping Details.")
     print("Enter following information")
@@ -42,7 +43,7 @@ def createShippingReport():
     report_uri = pinJSONtoIPFS(json_data)
 
     return owner, token_id, report_uri
-
+    
 #############################################################################
 # Function calls the reportShipment function the SupplyChain blockchain     #
 #  contact to pay stage owner and advance the contract stage                #
